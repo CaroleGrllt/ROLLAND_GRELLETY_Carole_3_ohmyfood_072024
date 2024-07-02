@@ -2,3 +2,118 @@
 @import '../utils/variables';
 
 
+#explorer__container {
+    display: flex;
+    flex-direction: column;
+
+    .search__content {
+        align-items: center;
+        background-color: $backgroundgrey;
+        box-shadow:  rgba(0, 0, 0, 0.25) 0px 4px 4px 0px inset;
+        display: flex;
+        flex-direction: column;
+        padding: 39px 0 57px;
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 21px;
+            margin: 20px 0 30px;
+            text-align: center;
+            color: $darkgrey;
+        }
+    }
+}
+
+#working__container {
+    padding: 50px 20px 70px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .stage__container {
+            display: flex;
+            flex-direction: column; 
+            gap: 25px;
+            padding: 0 15px;
+            
+            .stage__content {
+                display: flex;
+                align-items: center;
+                position: relative;
+                background-color: $backgroundgrey;
+                box-shadow:  rgba(0, 0, 0, 0.15) 0px 4px 15px 0px;
+                border-radius: 20px;
+                padding: 30px 35px;
+
+                .nbr {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    background-color: $purple;
+                    border-radius: 50%;
+                    padding: 2px;
+                    left: -15px;
+
+                    span {
+                        color: $white;
+                    }
+                }
+
+                .stage__picto {
+                    color: $midgrey;
+                    font-size: 20px;
+                    margin-right: 27px;
+
+                    &.stage__picto-purple {
+                        color: $purple;
+                    }
+                }
+
+                p {
+                    font-weight: 500;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+#restaurants__container {
+    padding: 50px 20px 70px;
+    background-color: $backgroundgrey;
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cards__container {
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+        }
+    }
+}

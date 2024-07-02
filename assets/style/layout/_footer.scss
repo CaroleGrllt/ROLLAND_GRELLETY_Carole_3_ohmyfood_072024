@@ -3,5 +3,39 @@
 
 
 footer {
-    
+    background-color: $darkgrey;
+    padding: 22px 25px;
+
+    .content {
+        .logo__footer {
+            margin-bottom: 20px;
+
+            svg {
+                width: 140px;
+
+                path {
+                    fill: $white;
+                }  
+            }
+        }
+
+        .ml {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    a {
+                        color: $white;
+
+                        &.bold {
+                            font-weight: 500;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
