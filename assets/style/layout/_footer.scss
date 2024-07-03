@@ -26,13 +26,20 @@ footer {
                 gap: 10px;
 
                 li {
+                    .picto__footer {
+                        margin-right: 12px;
+                        color: $white;
+                        width: 13px;
+                    } 
+
+
                     a {
                         color: $white;
 
                         &.bold {
                             font-weight: 500;
 
-                        }
+                        } 
                     }
                 }
             }
