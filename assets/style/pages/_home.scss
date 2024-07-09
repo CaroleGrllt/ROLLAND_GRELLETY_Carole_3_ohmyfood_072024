@@ -1,4 +1,4 @@
-@use '../utils/mixins';
+@import '../utils/mixins';
 @import '../utils/variables';
 
 
@@ -12,13 +12,28 @@
         box-shadow:  rgba(0, 0, 0, 0.25) 0px 4px 4px 0px inset;
         display: flex;
         flex-direction: column;
-        padding: 39px 0 57px;
+        padding: 39px 20px 57px;
+
+        @include desktop {
+            box-shadow: none;
+            padding: 30px 0;
+        }
 
         h1 {
             font-size: 24px;
             font-weight: 700;
             line-height: 28px;
             text-align: center;
+
+            @include tablet {
+                .hide {
+                    display: none;
+                }
+            }
+
+            @include desktop {
+                font-size: 40px;
+            }
         }
 
         p {
@@ -28,12 +43,20 @@
             margin: 20px 0 30px;
             text-align: center;
             color: $darkgrey;
+
+            @include desktop {
+                margin: 35px 0 30px;
+            }
         }
     }
 }
 
 #working__container {
     padding: 50px 20px 70px;
+
+    @include desktop {
+        padding: 50px 180px;
+    }
 
     .content {
         display: flex;
@@ -43,14 +66,22 @@
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 30px;
+
+            @include desktop {
+                margin-bottom: 35px;
+            }
         }
 
         .stage__container {
-            display: flex;
-            flex-direction: column; 
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 25px;
-            padding: 0 15px;
-            
+            padding-left: 15px;
+
+            @include desktop {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
             .stage__content {
                 display: flex;
                 align-items: center;
@@ -99,6 +130,10 @@
 #restaurants__container {
     padding: 50px 20px 70px;
     background-color: $backgroundgrey;
+
+    @include desktop {
+        padding: 30px 180px;
+    }
     
     .content {
         display: flex;
@@ -108,12 +143,28 @@
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 20px;
+
+            @include desktop {
+                margin-bottom: 35px;
+            }
         }
 
         .cards__container {
-            display: flex;
-            flex-direction: column; 
+            display: grid;
+            grid-template-columns: 1fr; 
             gap: 20px;
+
+            @include tablet {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 50px;
+                row-gap: 30px;
+            }
+
+            @include desktop {
+                column-gap: 100px;
+                row-gap: 50px;
+            }
         }
     }
 }
