@@ -1,2 +1,17 @@
 @import '../utils/mixins';
 @import '../utils/variables';
+
+.back__arrow {
+    position: absolute;
+    top: 28px;
+    left: 25px;
+
+    @include desktop {
+        top: 35px;
+    }
+
+    .fa-arrow-left {
+        font-size: 22px;
+        color: $darkgrey;
+    }
+}

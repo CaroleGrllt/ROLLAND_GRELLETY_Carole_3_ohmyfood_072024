@@ -179,6 +179,21 @@ template {
   display: none;
 }
 
+.back__arrow {
+  position: absolute;
+  top: 28px;
+  left: 25px;
+}
+@media (min-width: 1024px) {
+  .back__arrow {
+    top: 35px;
+  }
+}
+.back__arrow .fa-arrow-left {
+  font-size: 22px;
+  color: #353535;
+}
+
 .btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 20px;
@@ -270,6 +285,9 @@ template {
   font-weight: 500;
 }
 
+header {
+  position: relative;
+}
 header .logo__content {
   display: flex;
   justify-content: center;
