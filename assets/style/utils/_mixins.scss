@@ -1,3 +1,4 @@
+
 // --- 
 // RESPONSIVE
 // ---
@@ -20,28 +21,3 @@
     }
 }
 
-// --- 
-// ANIMATIONS
-// ---
-
-@mixin keyframes ($animation-name) {
-    @keyframes #{$animation-name} {
-        @content;
-    }
-}
-
-@mixin animation($name) {
-    animation: #{$name};
-}
-
-@include keyframes(fadeInUp) {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-      }
-            
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-}

@@ -1,5 +1,6 @@
 @import '../utils/mixins';
 @import '../utils/variables';
+@import '../utils/animations';
 
 .main__container {
     .banner {
@@ -33,16 +34,17 @@
                 margin-bottom: 40px;
 
                 &.delay__1 {
-                    @include animation('fadeInUp 700ms');
+                    @include animation('fadeInUp 2s');
                 }
             
                 &.delay__2 {
-                    @include animation('fadeInUp 800ms');
+                    @include animation('fadeInUp 3s');
                 }
             
                 &.delay__3 {
-                    @include animation('fadeInUp 900ms');
-                }m
+                    @include animation('fadeInUp 4s');
+                }
+
                 h2 {
                     text-transform: uppercase;
                     font-weight: 300;

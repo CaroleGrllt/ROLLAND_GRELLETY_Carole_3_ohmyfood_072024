@@ -15,9 +15,11 @@
     height: 45px;
     justify-content: center;
     align-items: center;
+    transition: opacity 400ms, box-shadow 400ms;
 
     &:hover {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 15px 0px;
+        opacity: 0.9;
     }
  }
 
