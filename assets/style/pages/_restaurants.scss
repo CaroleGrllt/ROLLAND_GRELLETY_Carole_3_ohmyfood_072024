@@ -1,3 +1,74 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 
+.main__container {
+    .banner {
+        .banner__img {
+            width: 100%;
+            height: 275px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .restaurant__content {
+        background-color: $backgroundgrey;
+        padding: 30px 13px 40px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        .restaurant__title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 35px;
+
+            h1 {
+                font-family: 'shrikhand';
+                font-size: 28px;
+            }
+        }
+
+        .meals__grid {
+            .meals__container {
+                margin-bottom: 40px;
+
+                &.delay__1 {
+                    @include animation('fadeInUp 700ms');
+                }
+            
+                &.delay__2 {
+                    @include animation('fadeInUp 800ms');
+                }
+            
+                &.delay__3 {
+                    @include animation('fadeInUp 900ms');
+                }m
+                h2 {
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                hr {
+                    width: 40px;
+                    margin: 0;
+                    height: 3px;
+                    background-color: $mint;
+                    border: none;
+                }
+
+                .meals__list {
+                    margin-top: 12px;
+                    display: grid;
+                    gap: 12px;
+                }
+            }
+
+            .order__btn {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

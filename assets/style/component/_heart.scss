@@ -1,2 +1,8 @@
 @import '../utils/mixins';
 @import '../utils/variables';
+
+.restaurant__heart {
+    i {
+        font-size: 22px;
+    }
+}

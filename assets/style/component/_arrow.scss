@@ -2,8 +2,9 @@
 @import '../utils/variables';
 
 .back__arrow {
+    padding: 5px 7px;
     position: absolute;
-    top: 28px;
+    top: 23px;
     left: 25px;
 
     @include desktop {
@@ -13,5 +14,10 @@
     .fa-arrow-left {
         font-size: 22px;
         color: $darkgrey;
+    }
+
+    &:hover {
+        background-color: $lightgrey;
+        border-radius: 20px;
     }
 }
