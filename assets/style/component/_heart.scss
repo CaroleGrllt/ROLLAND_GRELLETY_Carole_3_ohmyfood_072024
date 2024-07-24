@@ -20,10 +20,11 @@
             background-clip: text;
             color: transparent;
             opacity: 0;
+            transition: 300ms ease-in-out;
+
 
             &:hover {
                 opacity: 1;
-                transition: 300ms ease-in-out;
                 cursor: pointer;
             }
         }
